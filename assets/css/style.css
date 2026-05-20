@@ -1,0 +1,140 @@
+:root{
+   --colorFondo:#ffffff; 
+   --colorFonts:#ffffff;
+   --colorBanner:#d7d7d9f3;
+   --colorFondoSecundario:#bdc0c1;
+   --colorFondoTerceario:#e0e2e4;
+   --colorSeparador:#000000;
+   --colorMenu:#ffffff;
+   --letraMenu:arial;
+}
+
+*{
+    margin: 0px;
+    font-family: arial;
+}
+
+body{
+
+    background-color: var(--colorFondo);
+}
+
+.principal{
+
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4;
+
+}
+
+.fila{
+    grid-row: 1;
+    grid-column: 1/13;
+    height: 60vh;
+
+
+}
+
+.fila2{
+    grid-row: 3;
+    grid-column: 2/12;
+    height: 100vh;
+}
+
+.fila3{
+    grid-row: 4;
+     grid-column: 2/12;
+    height: 100vh;
+
+}
+
+.separador{
+    grid-row: 2;
+    grid-column: 1/13;
+    background-color: var(--colorSeparador);
+
+
+}
+
+
+
+.separador nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.separador nav li{
+    list-style: none;
+    padding: 10px;
+    color:var(--colorMenu);
+    font-family: var(--letraMenu);
+}
+
+.separador nav li:hover{
+    background-color: rgb(65, 64, 64);
+}
+
+
+
+#dibujo{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(170, 57, 57);
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/banner.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.letrabanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 80px;
+    font-weight: 900;
+    text-shadow: 12px 10px black;
+
+}
+
+#banner2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    font-style: italic;
+    color: rgb(242, 8, 8);
+    font-size: 47px;
+    font-weight: 900;
+    text-shadow: 12px 10px 10px rgb(26, 3, 3);
+    text-decoration: line-through;
+    animation: mover 2s reverse infinite;
+
+
+}
+
+#contenedor_banner{
+    display: flex;
+    margin-top: 120px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.578);
+    width: 600px;
+    height: 280px;
+    border-radius: 30px;
+}
+
+@keyframes mover {
+    
+    10%{
+
+        color: rgb(203, 13, 13);
+
+    }
+
+    100%{
+        color: yellow;
+    }
+}
