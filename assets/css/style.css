@@ -3,7 +3,7 @@
     --colorFondo: #ffffff;
     --colorFonts: #ffffff;
     --colorTitulos: #283b77;
-    --colorBanner: #283b77;
+    --colorBanner: #1b0655;
     --colorFondoSecundario: #bdc0c1;
     --colorFondoTerceario: #e0e2e4;
     --colorSeparador: #000000;
@@ -126,6 +126,13 @@ body {
     padding: 50px 2px 2px 2px;
 }
 
+
+.fila4 {
+    grid-row: 6;
+    grid-column: 1/13;
+    height: auto;
+    padding: 50px 2px 2px 2px;
+}
 
 .separador {
 
@@ -408,6 +415,12 @@ body {
     color: var(--colorLetraBotonCarrito);
 }
 
+.estilo_boton_carro:active {
+
+    color: rgb(255, 255, 255);
+    animation: colorBotones 2s alternate infinite   ;
+}
+
 .contenedor_nuevo {
     position: relative;
     display: grid;
@@ -588,6 +601,19 @@ body {
     100% {
 
         color: yellow;
+
+    }
+}
+
+@keyframes colorBotones{
+
+    10%{
+        background-color: #1b0655;
+    }
+
+    100%{
+
+        background-color: #250a6f;
 
     }
 }
