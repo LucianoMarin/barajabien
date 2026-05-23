@@ -111,8 +111,11 @@ body {
 
 .fila2 {
     grid-row: 3;
-    grid-column: 2/12;
-    height: 60vh;
+    grid-column: 1/13;
+    height: auto;
+    border: 1px solid;
+    background-color: rgb(0, 0, 0);
+
 
 }
 
@@ -120,7 +123,7 @@ body {
     grid-row: 5;
     grid-column: 1/13;
     height: auto;
-
+    padding: 50px 2px 2px 2px;
 }
 
 
@@ -271,7 +274,7 @@ body {
 
 
 .imagenes_nav {
-
+    position: relative;
     margin: 15px 0px 15px 0px;
     border-radius: 30px;
     height: 150px;
@@ -314,7 +317,6 @@ body {
 }
 
 .contenedor_carrito {
-
     display: grid;
     grid-template-rows: 3;
     grid-template-columns: repeat(4, 1fr);
@@ -338,12 +340,19 @@ body {
 
 }
 
-.imagen_recuadro_carrito img {
+
+.imagen_recuadro_carrito {
     display: flex;
-    grid-row: 1;
-    justify-self: center;
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: auto;
+    justify-content: center;
+
+}
+
+
+.imagen_recuadro_carrito img {
+    height: 300px;
+    width: auto;
 
 }
 
@@ -396,8 +405,62 @@ body {
     border-radius: 2px;
     border: none;
     background-color: var(--colorBotonCarrito);
-
     color: var(--colorLetraBotonCarrito);
+}
+
+.contenedor_nuevo {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.img_carrusel {
+    display: block;
+    width: 900px;
+    height: auto;
+    border-radius: 4%;
+  mask: linear-gradient(to right, 
+        transparent 0%, 
+        black 20%, 
+        black 80%, 
+        transparent 100%);
+    -webkit-mask: linear-gradient(to right, 
+        transparent 0%, 
+        black 20%, 
+        black 80%, 
+        transparent 100%);
+}
+
+.contenedor_nuevo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 0%, rgb(21, 21, 21) 100%);
+    pointer-events: none;
+}
+
+
+.texto_imagen_nav{
+
+position: absolute;
+    width: 100%;      
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(236, 234, 234);
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+    font-weight: 500;
+    z-index: 1;
+    pointer-events: none;  
 }
 
 @keyframes mover {
