@@ -7,37 +7,184 @@
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="principal">
-<div class="fila">
-<div id="dibujo">
-    <div id="contenedor_banner">
-<div class="letrabanner">BARAJA</div>
-<span id="banner2">BIEN</span>  
-<img src="./assets/images/banner/principal.png">  
-</div>
-</div>
 
-</div>
-<div class="separador">
- <nav>
-   <ul>
-    <li>Nuevos Productos</li>
-    <li>Juegos de mesa</li>
-    <li>TCG</li>
-    <li>Eventos</li>
-    <li>Nuestras tiendas</li>
-   </ul>
- </nav>   
-</div>
-<div class="fila2">
+<main class="principal">
 
-    
-</div>
-<div class="fila3">
+    <div class="banner">
+        <div id="dibujo">
+            <div id="contenedor_banner">
+            <img src="./assets/images/banner/principal.png" id="tam_banner" alt="Banner principal, muestra gatito jugando cartas, llorando, perdiendo"/>  
+        <div class="letrabanner">
+            BARAJA
+        </div>
+        <span id="letrabanner2">
+            BIEN
+        </span>  
+            </div>
+        </div>
+        <div id="buscador_campo"><input type="text" id="buscador">
+        <button id="btn_buscar">Buscar</button>
+        </div>
+        
+    </div>
 
-    
-</div>
-</div>
+
+    <div class="separador">
+        <nav class="menu">
+            <ul>
+            <li class="opcionPadre">Nuevos Productos</li>
+            <li class="opcionPadre"><a href="#productos">Productos</a>
+        <ul>
+            <li class="subopciones">Mitos y Leyendas</li>
+            <li class="subopciones">Pokemon</li>
+            <li class="subopciones">Magic</li>
+            <li class="subopciones">Yugi Oh</li>
+        </ul>
+            </li>
+            <li class="opciones">Eventos</li>
+            <li class="opciones">Nuestras tiendas</li>
+            </ul>
+        </nav>   
+    </div>  
+
+    <div class="fila">
+        <div class="contenedor_imagenes_nav">
+            <div class="imagenes_nav">
+                <img src="./assets/images/nav_imagenes/myl.png" alt="" srcset="">
+
+            </div>
+               <div class="imagenes_nav">
+                <img src="./assets/images/nav_imagenes/pokemon.png" alt="" srcset="">
+
+                
+            </div>
+               <div class="imagenes_nav">
+                <img src="./assets/images/nav_imagenes/magic.png" alt="" srcset="">
+                    
+               </div>
+
+              <div class="imagenes_nav">
+                <img src="./assets/images/nav_imagenes/yugioh.png" alt="" srcset="">
+
+             </div>
+        </div>
+    </div>
+
+    <div class="fila2">
+    asd
+    </div>
+
+    <div class="fila3" id="productos">
+        <div class="titulo">
+            <span>Productos Tienda</span>
+            <img src="./assets/images/iconos/espadas.png" class="iconos_titulos" alt="" srcset=""/>
+       
+        </div>
+        <div class="contenedor_carrito" >
+            <div class="recuadro_carrito">
+                <div class="imagen_recuadro_carrito">
+                    <img src="./assets/images/productos/prod1.webp" alt="" srcset="">
+                </div>
+                  <div class="titulo_producto_recuadro_carrito">
+                    <span>Loot Box MYL</span>
+                </div>
+                <div class="descripcion_recuadro_carrito">
+                Esto es un producto que se esta vendiendo en la tienda
+                </div>
+
+                  <div class="estado_recuadro_carrito">
+                    <span>Disponible</span><img class="prop_img_carro" src="./assets/images/iconos/validar.png">
+                </div>
+
+                <div class="precio_recuadro_carrito">
+                    <span>Precio: $13.000</span>
+                </div>
+
+                <div class="boton_recuadro_carrito">
+                    <button class="estilo_boton_carro">Comprar</button>
+                </div>
+
+            </div>
+             <div class="recuadro_carrito">
+                <div class="imagen_recuadro_carrito">
+                    <img src="./assets/images/productos/prod1.webp" alt="" srcset="">
+                </div>
+                  <div class="titulo_producto_recuadro_carrito">
+                    <span>Loot Box MYL</span>
+                </div>
+                <div class="descripcion_recuadro_carrito">
+                Esto es un producto que se esta vendiendo en la tienda
+                </div>
+
+                  <div class="estado_recuadro_carrito">
+                    <span>Disponible</span><img class="prop_img_carro" src="./assets/images/iconos/validar.png">
+                </div>
+
+                <div class="precio_recuadro_carrito">
+                    <span>Precio: $13.000</span>
+                </div>
+
+                <div class="boton_recuadro_carrito">
+                    <button class="estilo_boton_carro">Comprar</button>
+                </div>
+
+            </div>
+            <div class="recuadro_carrito">
+                <div class="imagen_recuadro_carrito">
+                    <img src="./assets/images/productos/prod1.webp" alt="" srcset="">
+                </div>
+                  <div class="titulo_producto_recuadro_carrito">
+                    <span>Loot Box MYL</span>
+                </div>
+                <div class="descripcion_recuadro_carrito">
+                Esto es un producto que se esta vendiendo en la tienda
+                </div>
+
+                  <div class="estado_recuadro_carrito">
+                    <span>Disponible</span><img class="prop_img_carro" src="./assets/images/iconos/validar.png">
+                </div>
+
+                <div class="precio_recuadro_carrito">
+                    <span>Precio: $13.000</span>
+                </div>
+
+                <div class="boton_recuadro_carrito">
+                    <button class="estilo_boton_carro">Comprar</button>
+                </div>
+
+            </div>
+             <div class="recuadro_carrito">
+                <div class="imagen_recuadro_carrito">
+                    <img src="./assets/images/productos/prod1.webp" alt="" srcset="">
+                </div>
+                  <div class="titulo_producto_recuadro_carrito">
+                    <span>Loot Box MYL</span>
+                </div>
+                <div class="descripcion_recuadro_carrito">
+                Esto es un producto que se esta vendiendo en la tienda
+                </div>
+
+                  <div class="estado_recuadro_carrito">
+                    <span>Disponible</span><img class="prop_img_carro" src="./assets/images/iconos/eliminar.png">
+                </div>
+
+                <div class="precio_recuadro_carrito">
+                    <span>Precio: $13.000</span>
+                </div>
+
+                <div class="boton_recuadro_carrito">
+                    <button class="estilo_boton_carro">Comprar</button>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+
+</main>
+
+
 </body>
 <script src="./assets/javascript/javascript.js"></script>
 </html>
