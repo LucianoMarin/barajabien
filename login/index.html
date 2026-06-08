@@ -24,8 +24,7 @@
                 </span>
             </div>
         </div>
-        <div id="buscador_campo"><input type="text" placeholder="Ej: cartas pokemon" id="buscador">
-            <button id="btn_buscar">Buscar</button>
+
         </div>
 
     </div>
@@ -47,16 +46,18 @@
                 </li>
                 <li class="opciones"><a href="#eventos">Eventos</a></li>
                 <li class="opciones">Nuestras tiendas</li>
-                <li class="opciones"><a href="./registrar.html">Registrar</a></li>
+                    <li class="opciones"><a href="./registrar">Registrar</a></li>
 
             </ul>
         </nav>
     </div>
-
+<form action="" method="post" id="formulario_login">
     <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <h2 class="mb-3">Login</h2>
+            
+            <div class="mb-3" id="mensaje"></div>
 
             <div class="mb-3">
                 <label for="usuario" class="form-label">Usuario</label>
@@ -64,16 +65,17 @@
             </div>
 
             <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" id="password" class="form-control">
+                <label for="contraseña" class="form-label">Contraseña</label>
+                <input type="password" id="contraseña" class="form-control">
             </div>
 
             <div class="mb-3">
-                <button class="btn btn-primary w-100">Entrar</button>
+                <button class="btn btn-primary w-100" id="ingresar">Entrar</button>
             </div>
         </div>
     </div>
 </div>
+</form>
     </div>
     </div>
 
@@ -82,4 +84,5 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
+    <script src="../assets/javascript/login.js"></script>
 </html>
