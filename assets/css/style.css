@@ -61,32 +61,32 @@ body {
 }
 
 #buscador_campo {
-    grid-row: 1  !important;
-    display: flex  !important;
-    justify-content: center  !important;
-    align-items: center  !important;
-    margin: 0px  !important;
-    grid-row: 1  !important;
-    grid-column: 5/12  !important;
+    grid-row: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0px !important;
+    grid-row: 1 !important;
+    grid-column: 5/12 !important;
 
 }
 
 
 #buscador {
-    width: 50%  !important;
-    height: 20px  !important;
-    border-radius: 20px  !important;
-    padding: 10px  !important;
-    outline: none  !important;
-    border: none  !important;
-    font-size: 20px  !important;
-    color: #787373  !important;
-    font-weight: 200  !important;
+    width: 50% !important;
+    height: 20px !important;
+    border-radius: 20px !important;
+    padding: 10px !important;
+    outline: none !important;
+    border: none !important;
+    font-size: 20px !important;
+    color: #787373 !important;
+    font-weight: 200 !important;
 }
 
 
 #btn_buscar {
-    padding: 10px !important; 
+    padding: 10px !important;
     border-radius: 4px !important;
     border: none !important;
     margin-left: 5px !important;
@@ -533,6 +533,111 @@ body {
 
 }
 
+/* ===== MEDIA QUERIES PARA NAV RESPONSIVO ===== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .separador nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .separador nav li {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    .opcionPadre {
+        position: relative;
+    }
+    
+    .opcionPadre.mostrar ul {
+        position: absolute;
+        width: auto;
+        min-width: 150px;
+        left: 0;
+        top: 100%;
+    }
+    
+    .opcionPadre.mostrar ul li {
+        white-space: nowrap;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .separador nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+    
+    .separador nav li {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        position: relative;
+    }
+    
+    .separador nav li:last-child {
+        border-bottom: none;
+    }
+    
+    .opcionPadre.mostrar ul {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+        left: auto;
+    }
+    
+    .opcionPadre.mostrar ul li {
+        white-space: normal;
+        text-align: center;
+        background-color: #2a2a2a;
+    }
+    
+    /* Textos banner */
+    .letrabanner {
+        font-size: 24px;
+    }
+    
+    #letrabanner2 {
+        font-size: 14px;
+    }
+    
+    #tam_banner {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+    .separador nav li {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .letrabanner {
+        font-size: 18px;
+    }
+    
+    #letrabanner2 {
+        font-size: 12px;
+    }
+    
+    #tam_banner {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .opcionPadre.mostrar ul li {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
 @media (max-width:1360px) {
 
     .contenedor_carrito {
@@ -615,7 +720,7 @@ body {
 
     #buscador_campo {
         display: hidden !important;
-        grid-column: 6/13  !important;
+        grid-column: 6/13 !important;
     }
 
 }
